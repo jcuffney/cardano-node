@@ -13,20 +13,20 @@ workflows:
   primary:
     jobs:
       - aws-ecr/build-and-push-image:
-        context: cuffney
-        account-url: AWS_ECR_ACCOUNT_URL
-        aws-access-key-id: AWS_ACCESS_KEY_ID
-        aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-        create-repo: true
-        dockerfile: Dockerfile
-        no-output-timeout: 20m
-        path: .
-        region: AWS_DEFAULT_REGION
-        repo: "jcuffney/cardano-node-${CIRCLE_BRANCH}"
-        skip-when-tags-exist: false
-        tag: "latest,${CIRCLE_SHA1}" 
-        filters:
-          branches:
-            only:
-              - dev 
-              - master
+          context: cuffney
+          account-url: AWS_ECR_ACCOUNT_URL
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          create-repo: true
+          dockerfile: Dockerfile
+          no-output-timeout: 20m
+          path: .
+          region: AWS_DEFAULT_REGION
+          repo: "jcuffney/cardano-node-${CIRCLE_BRANCH}"
+          skip-when-tags-exist: false
+          tag: "latest,${CIRCLE_SHA1}" 
+          filters:
+            branches:
+              only:
+                - dev 
+                - master

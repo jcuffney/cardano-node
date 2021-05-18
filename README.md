@@ -1,8 +1,8 @@
 # Cardano Stake Pool
 
-Name: `Nox's Pool`
-Ticker: `NOX`
-Website: `<?>`
+- Name: `Nox's Pool`
+- Ticker: `NOX`
+- Website: `<?>`
 
 ## Docker Info
 

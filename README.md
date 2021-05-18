@@ -4,7 +4,7 @@
 
 - Name: `Nox's Pool`
 - Ticker: `NOX`
-- Website: `<?>`
+- Website: `https://noxpool.com	`
 
 ## Docker Info
 

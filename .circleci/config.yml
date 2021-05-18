@@ -28,5 +28,5 @@ workflows:
           filters:
             branches:
               only:
-                - dev 
-                - master
+                - test # testnet
+                - main # mainnet
